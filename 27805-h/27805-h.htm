@@ -13,8 +13,8 @@
 <!--
 
 body {
-    margin-left: 10%;
-    margin-right: 10%;
+    max-width: 40em;
+    margin: auto;
 }
 
     h1,h2,h3,h4,h5 {
@@ -93,6 +93,7 @@ table {
            padding-bottom: 4em;
            margin-left: 30%;
            margin-right: 30%;
+           margin-top: 2em;
 }
 
 .bbox2    {border-style: double;
@@ -128,9 +129,32 @@ table {
 }
 
 /* Images */
-.figcenter   {
+figure, .figcenter   {
     margin: auto;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    margin-bottom: 4em;
+    margin-top: 2em;
+}
+img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+figure figcaption, .figcenter .caption,
+figure .caption, .figcenter figcaption {
+    font-weight: 500;
+    font-style: italic;
+    font-size: 120%;
+    position: absolute;
+    bottom: -2rem;
+    width: 100%;
+}
+.two-page > img {
+    width: 50%;
 }
 
 /* Poetry */
@@ -218,35 +242,32 @@ by The Internet Archive/American Libraries.)
 </pre>
 
 
-<p><br /><br /></p>
-<div class="figcenter" style="width: 400px;">
-<img src="images/cover.jpg" width="400" height="556"
+<figure>
+<img src="images/cover.jpg" 
 alt="Book Cover" title="Book Cover" />
-<span class="caption">Book Cover</span>
-</div>
-<p><br /><br /></p>
+<figcaption>Book Cover</figcaption>
+</figure>
 
-<div class="figcenter" style="width: 630px;" >
-<img src="images/fly.jpg" width="630" height="423"
+
+<figure>
+<img src="images/fly.jpg" 
 alt="Front Fly Leaf" title="Fly Leaf" />
-<span class="caption">Front Fly Leaf</span>
-</div>
-<p><br /><br /></p>
+<figcaption>Front Fly Leaf</figcaption>
+</figure>
+
 
 <div class="bbox"><h1>THE WIND IN THE WILLOWS</h1></div>
-<p><br /><br /></p>
 
 <p><a name="Frontis" id="Frontis"></a></p>
-<div class="figcenter" style="width: 420px;">
-<img src="images/frontis.jpg" width="420" height="572"
+<figure>
+<img src="images/frontis.jpg" 
 alt="The Piper at the Gates of Dawn"
 title="The Piper at the Gates of Dawn" />
-<span class="caption">The Piper at the Gates of Dawn</span>
-</div>
-<p><br /><br /></p>
+<figcaption>The Piper at the Gates of Dawn</figcaption>
+</figure>
 
-<div class="figcenter" style="width: 400px;">
-<img src="images/title.jpg" width="400" height="620"
+<figure>
+<img src="images/title.jpg" 
 
 alt="
 THE WIND
@@ -262,7 +283,7 @@ CHARLES SCRIBNER'S SONS
 MCMXIII
 "
  />
-</div>
+</figure>
 
 <h5><i>Copyright, 1908, 1913, by</i></h5>
 <h4>CHARLES SCRIBNER'S SONS</h4>
@@ -525,11 +546,11 @@ again. "Do you know, I've never been in a
 boat before in all my life."</p>
 
 <p><a name="Page8pic" id="Page8pic"></a></p>
-<div class="figcenter" style="width: 420px;">
-<img src="images/illus01.jpg" width="420" height="559"
+<figure>
+<img src="images/illus01.jpg"
 alt="It was the Water Rat" title="It was the Water Rat" />
-<span class="caption">It was the Water Rat</span>
-</div>
+<figcaption>It was the Water Rat</figcaption>
+</figure>
 
 <p>"What?" cried the Rat, open-mouthed:
 <!-- Page 9 --><span class="pagenum">
@@ -1081,7 +1102,8 @@ whispering so constantly among them.
 <br />
 </p>
 
-<p class="cap">"RATTY," said the Mole suddenly, one
+<blockquote>"RATTY,"</blockquote>
+<p>said the Mole suddenly, one
 bright summer morning, "if you please,
 I want to ask you a favour."</p>
 
@@ -1715,13 +1737,13 @@ smell! I owe it all to you, my best of
 friends!"</p>
 
 <p><a name="Page50pic" id="Page50pic"></a></p>
-<div class="figcenter" style="width: 420px;">
-<img src="images/illus02.jpg" width="420" height="559"
+<figure>
+<img src="images/illus02.jpg" 
 alt="&quot;Come on!&quot; he said. &quot;We shall just have to walk it&quot;"
 title="&quot;Come on!&quot; he said. &quot;We shall just have to walk it&quot;" />
-<span class="caption">&quot;Come on!&quot; he said.
-     &quot;We shall just have to walk it&quot;</span>
-</div>
+<figcaption>&quot;Come on!&quot; he said.
+     &quot;We shall just have to walk it&quot;</figcaption>
+</figure>
 
 <p>The Rat turned from him in despair. "You
 <!-- Page 51 --><span class="pagenum">
@@ -2056,11 +2078,11 @@ Rat had vainly tried to shield him from&mdash;the
 Terror of the Wild Wood!</p>
 
 <p><a name="Page64pic" id="Page64pic"></a></p>
-<div class="figcenter" style="width: 420px;">
-<img src="images/illus03.jpg" width="420" height="572"
+<figure>
+<img src="images/illus03.jpg" 
 alt="In panic, he began to run" title="In panic, he began to run" />
-<span class="caption">In panic, he began to run</span>
-</div>
+<figcaption>In panic, he began to run</figcaption>
+</figure>
 
 <p>Meantime the Rat, warm and comfortable,
 dozed by his fireside. His paper of half-finished
@@ -2913,12 +2935,12 @@ had the luck to meet any of 'Them' I'd have
 learnt something more&mdash;or <i>they</i> would."</p>
 
 <p><a name="Page94pic" id="Page94pic"></a></p>
-<div class="figcenter" style="width: 420px;">
-<img src="images/illus04.jpg" width="420" height="570"
+<figure>
+<img src="images/illus04.jpg" 
 alt="Through the Wild Wood and the snow"
 title="Through the Wild Wood and the snow" />
-<span class="caption">Through the Wild Wood and the snow</span>
-</div>
+<figcaption>Through the Wild Wood and the snow</figcaption>
+</figure>
 
 <p>"Weren't you at all&mdash;er&mdash;nervous?" asked
 the Mole, some of yesterday's terror coming
@@ -3718,7 +3740,7 @@ down to supper with us to-night!"</p>
 <p>"No bread!" groaned the Mole dolorously;
 "no butter, no&mdash;"</p>
 
-<p>"No <i>pâté de foie gras</i>, no champagne!" continued
+<p>"No <i>p\E2t\E9 de foie gras</i>, no champagne!" continued
 the Rat, grinning. "And that reminds
 me&mdash;what's that little door at the end of the
 passage? Your cellar, of course! Every luxury
@@ -4753,13 +4775,13 @@ where an ancient gaoler sat fingering a bunch
 of mighty keys.</p>
 
 <p><a name="Page164pic" id="Page164pic"></a></p>
-<div class="figcenter" style="width: 420px;">
-<img src="images/illus05.jpg" width="420" height="571"
+<figure>
+<img src="images/illus05.jpg" 
 alt="Toad was a helpless prisoner in the remotest dungeon"
 title="Toad was a helpless prisoner in the remotest dungeon" />
-<span class="caption">Toad was a helpless
-    prisoner in the remotest dungeon</span>
-</div>
+<figcaption>Toad was a helpless
+    prisoner in the remotest dungeon</figcaption>
+</figure>
 
 <p>"Oddsbodikins!" said the sergeant of police,
 taking off his helmet and wiping his forehead.
@@ -5494,12 +5516,12 @@ all that he was capable of if he only gave his
 great mind to it; and the cure was almost complete.</p>
 
 <p><a name="Page196pic" id="Page196pic"></a></p>
-<div class="figcenter" style="width: 420px;">
-<img src="images/illus06.jpg" width="420" height="571"
+<figure>
+<img src="images/illus06.jpg" 
 alt="He lay prostrate in his misery on the floor"
 title="He lay prostrate in his misery on the floor" />
-<span class="caption">He lay prostrate in his misery on the floor</span>
-</div>
+<figcaption>He lay prostrate in his misery on the floor</figcaption>
+</figure>
 
 <p>When the girl returned, some hours later, she
 carried a tray, with a cup of fragrant tea steaming
@@ -6157,7 +6179,7 @@ call.</p>
 
 <p>Nature's Grand Hotel has its Season, like the
 others. As the guests one by one pack, pay,
-and depart, and the seats at the <i>table-d'hôte</i>
+and depart, and the seats at the <i>table-d'h\F4te</i>
 shrink pitifully at each succeeding meal; as
 suites of rooms are closed, carpets taken up,
 and waiters sent away; those boarders who are
@@ -6690,13 +6712,13 @@ of shell-fish! Why, sometimes I dream of the
 shell-fish of Marseilles, and wake up crying!"</p>
 
 <p><a name="Pge240pic" id="Pge240pic"></a></p>
-<div class="figcenter" style="width: 420px;">
-<img src="images/illus07.jpg" width="420" height="570"
+<figure>
+<img src="images/illus07.jpg" 
 alt="&quot;It&#39;s a hard life, by all accounts,&quot; murmured the Rat"
 title="&quot;It&#39;s a hard life, by all accounts,&quot; murmured the Rat" />
-<span class="caption">&quot;It&#39;s a hard life,
-      by all accounts,&quot; murmured the Rat</span>
-</div>
+<figcaption>&quot;It&#39;s a hard life,
+      by all accounts,&quot; murmured the Rat</figcaption>
+</figure>
 
 <p>"That reminds me," said the polite Water
 Rat; "you happened to mention that you were
@@ -8077,13 +8099,13 @@ to hear animals saying, as I go about, that
 I'm the chap that keeps company with gaol-birds?"</p>
 
 <p><a name="Page292pic" id="Page292pic"></a></p>
-<div class="figcenter" style="width: 420px;">
-<img src="images/illus08.jpg" width="420" height="570"
+<figure>
+<img src="images/illus08.jpg" 
 alt="Dwelling chiefly on his own cleverness, and presence of mind in emergencies"
 title="Dwelling chiefly on his own cleverness, and presence of mind in emergencies" />
-<span class="caption">Dwelling chiefly on his own cleverness,
-      and presence of mind in emergencies</span>
-</div>
+<figcaption>Dwelling chiefly on his own cleverness,
+      and presence of mind in emergencies</figcaption>
+</figure>
 
 <p>Now, it was a very comforting point in
 Toad's character that he was a thoroughly
@@ -9002,12 +9024,12 @@ fool of himself he would most certainly be left
 behind.</p>
 
 <p><a name="Page326pic" id="Page326pic"></a></p>
-<div class="figcenter" style="width: 420px;">
-<img src="images/illus09.jpg" width="420" height="569"
+<figure>
+<img src="images/illus09.jpg" 
 alt="The Badger said, &quot;Now then, follow me!&quot;"
 title="The Badger said, &quot;Now then, follow me!&quot;" />
-<span class="caption">The Badger said, &quot;Now then, follow me!&quot;</span>
-</div>
+<figcaption>The Badger said, &quot;Now then, follow me!&quot;</figcaption>
+</figure>
 
 <p>So at last they were in the secret passage,
 and the cutting-out expedition had really begun!</p>
@@ -9182,7 +9204,7 @@ shan't have much trouble from <i>them</i> to-night!"</p>
 <p>The Mole vanished promptly through a window;
 and the Badger bade the other two set a
 table on its legs again, pick up knives and forks
-and plates and glasses from the <i>débris</i> on the
+and plates and glasses from the <i>d\E9bris</i> on the
 <!-- Page 333 --><span class="pagenum">
 <a name="Page_333" id="Page_333">[Pg 333]</a></span>
 floor, and see if they could find materials for a
@@ -9710,20 +9732,19 @@ but it never failed to have its full effect.
 </p>
 
 <p><i>The Wind in the Willows</i></p>
-<div class="figcenter" style="width: 150px;">
-<img src="images/backlogo.jpg" width="150" height="168"
+<figure>
+<img src="images/backlogo.jpg" 
 alt="Back Page Logo" title="Back Page Logo" />
-</div>
+</figure>
 
 <p>
 <!-- Don't change the spacing of next block or pics wont line up correctly -->
 <br /><br /></p>
-<div class="figcenter" style="width: 800px;">
-<img src="images/fly1.jpg" width="400" height="536"
-alt="Back Fly Cover" title="Back Fly Leaf" /><img src="images/fly2.jpg" width="400" height="536"
-alt="Back Fly Cover" title="Back Fly Leaf" />
-<span class="caption">Back Fly Leaf</span>
-</div>
+<figure class="two-page">
+<img src="images/fly1.jpg" alt="Back Fly Cover" title="Back Fly Leaf Left" />
+<img src="images/fly2.jpg" alt="Back Fly Cover" title="Back Fly Leaf Right" />
+<figcaption>Back Fly Leaf</figcaption>
+</figure>
 
 
 
