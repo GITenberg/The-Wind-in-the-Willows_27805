@@ -33,6 +33,8 @@ description: "The Wind in the Willows is a children's novel by Kenneth Grahame, 
   \ as a musical by Julian Fellowes. 1946 saw the first of several film adaptions.\
   \ In 2003, The Wind in the Willows was listed at number 16 in the BBC's survey The\
   \ Big Read.\n From Wikipedia (CC BY-SA)."
+edition_identifiers:
+  edition_id: http://www.gutenberg.org/ebooks/27805#The-Wind-in-the-Willows
 gutenberg_issued: '2009-01-14'
 gutenberg_type: Text
 identifiers:
